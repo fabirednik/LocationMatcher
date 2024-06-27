@@ -1,0 +1,21 @@
+[
+  {
+    "region": "region1",
+    "matched_locations": [
+      "location1",
+      "location2"
+    ]
+  },
+  {
+    "region": "region2",
+    "matched_locations": [
+      "location3",
+      "location4",
+      "location5"
+    ]
+  },
+  {
+    "region": "region3",
+    "matched_locations": []
+  }
+]

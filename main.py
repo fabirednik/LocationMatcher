@@ -1,10 +1,5 @@
 import sys
 import json
-from math import sqrt
-
-
-def distance(point1: list, point2: list):
-    return sqrt((point1[0] - point2[0]) ** 2 + (point1[1] - point2[1]) ** 2)
 
 
 def point_in_polygon(point: list, polygon: list):
@@ -25,10 +20,6 @@ def point_in_polygon(point: list, polygon: list):
         coordinates2 = polygon[(i + 1) % n]
         x2 = coordinates2[0]
         y2 = coordinates2[1]
-
-        # Check if the point is on the edge of the polygon
-        if abs(distance([x1, y1], [x, y]) + distance([x, y], [x2, y2]) - distance([x1, y1], [x2, y2])) < 1e-9:
-            return True
 
         if (y1 < y <= y2) or (y2 < y <= y1):
             intersection_x = x1 + (y - y1) / (y2 - y1) * (x2 - x1)

@@ -541,13 +541,11 @@ class LocationMatcherTests(unittest.TestCase):
         ]
         self.assertEqual(get_results_for_region(regions, locations), [
             {
-                "region": "region1",
-                "matched_locations": [
-                    "location1",
-                    "location2",
-                    "location3",
-                    "location4",
-                    "location5"
+                'region': 'region1',
+                'matched_locations': [
+                    'location1',
+                    'location2',
+                    'location3'
                 ]
             }
         ])
@@ -1083,34 +1081,30 @@ class LocationMatcherTests(unittest.TestCase):
         ]
         self.assertEqual(get_results_for_location(regions, locations), [
             {
-                "location": "location1",
-                "matched_regions": [
-                    "region1"
+                'location': 'location1',
+                'matched_regions': [
+                    'region1'
                 ]
             },
             {
-                "location": "location2",
-                "matched_regions": [
-                    "region1"
+                'location': 'location2',
+                'matched_regions': [
+                    'region1'
                 ]
             },
             {
-                "location": "location3",
-                "matched_regions": [
-                    "region1"
+                'location': 'location3',
+                'matched_regions': [
+                    'region1'
                 ]
             },
             {
-                "location": "location4",
-                "matched_regions": [
-                    "region1"
-                ]
+                'location': 'location4',
+                'matched_regions': []
             },
             {
-                "location": "location5",
-                "matched_regions": [
-                    "region1"
-                ]
+                'location': 'location5',
+                'matched_regions': []
             }
         ])
 
